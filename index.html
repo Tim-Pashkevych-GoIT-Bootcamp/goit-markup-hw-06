@@ -45,6 +45,16 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu btn-menu-icon btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg class="manu-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -64,8 +74,8 @@
       <section class="section-benefits section-content">
         <div class="container">
           <h2 class="benefits-title visually-hidden">Our features</h2>
-          <ul class="list benefits-list">
-            <li class="benefits-item">
+          <ul class="list benefits-list flex-grid">
+            <li class="benefits-item flex-grid-item">
               <div class="benefits-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -77,7 +87,7 @@
                 creative solution.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item flex-grid-item">
               <div class="benefits-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-clock"></use>
@@ -89,7 +99,7 @@
                 possible time.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item flex-grid-item">
               <div class="benefits-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-diagram"></use>
@@ -101,7 +111,7 @@
                 and minimize risk.
               </p>
             </li>
-            <li class="benefits-item">
+            <li class="benefits-item flex-grid-item">
               <div class="benefits-icon">
                 <svg class="icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-astronaut"></use>
@@ -125,7 +135,11 @@
             <li class="services-item">
               <img
                 class="service-img"
-                src="./images/our-services/marketing.jpg"
+                srcset="
+                  ./images/our-services/marketing_desk.jpg    1x,
+                  ./images/our-services/marketing_desk@2x.jpg 2x
+                "
+                src="./images/our-services/marketing_desk.jpg"
                 alt="Desktop monitor with opened an analytics website"
                 width="360"
                 height="300"
@@ -134,7 +148,11 @@
             <li class="services-item">
               <img
                 class="service-img"
-                src="./images/our-services/app-design.jpg"
+                srcset="
+                  ./images/our-services/app-design_desk.jpg    1x,
+                  ./images/our-services/app-design_desk@2x.jpg 2x
+                "
+                src="./images/our-services/app-design_desk.jpg"
                 alt="Mockup design for a mobile app"
                 width="360"
                 height="300"
@@ -143,7 +161,11 @@
             <li class="services-item">
               <img
                 class="service-img"
-                src="./images/our-services/website-design.jpg"
+                srcset="
+                  ./images/our-services/website-design_desk.jpg    1x,
+                  ./images/our-services/website-design_desk@2x.jpg 2x
+                "
+                src="./images/our-services/website-design_desk.jpg"
                 alt="Man is working on laptop and looking at his cell phone"
                 width="360"
                 height="300"
@@ -157,11 +179,15 @@
       <section class="section-team section-content">
         <div class="container">
           <h2 class="team-title section-title">Our Team</h2>
-          <ul class="list team-list">
-            <li class="team-item">
+          <ul class="list team-list flex-grid">
+            <li class="team-item flex-grid-item">
               <img
                 class="member-img"
-                src="./images/team-members/mark-guerrero.jpg"
+                srcset="
+                  ./images/team-members/mark-guerrero/img.jpg    1x,
+                  ./images/team-members/mark-guerrero/img@2x.jpg 2x
+                "
+                src="./images/team-members/mark-guerrero/img.jpg"
                 alt="Portrait photo"
                 width="264"
                 height="260"
@@ -201,10 +227,14 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item flex-grid-item">
               <img
                 class="member-img"
-                src="./images/team-members/tom-ford.jpg"
+                srcset="
+                  ./images/team-members/tom-ford/img.jpg    1x,
+                  ./images/team-members/tom-ford/img@2x.jpg 2x
+                "
+                src="./images/team-members/tom-ford/img.jpg"
                 alt="Portrait photo"
                 width="264"
                 height="260"
@@ -244,10 +274,14 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item flex-grid-item">
               <img
                 class="member-img"
-                src="./images/team-members/camila-garcia.jpg"
+                srcset="
+                  ./images/team-members/camila-gracia/img.jpg    1x,
+                  ./images/team-members/camila-gracia/img@2x.jpg 2x
+                "
+                src="./images/team-members/camila-gracia/img.jpg"
                 alt="Portrait photo"
                 width="264"
                 height="260"
@@ -287,10 +321,14 @@
                 </ul>
               </div>
             </li>
-            <li class="team-item">
+            <li class="team-item flex-grid-item">
               <img
                 class="member-img"
-                src="./images/team-members/daniel-wilson.jpg"
+                srcset="
+                  ./images/team-members/daniel-wilson/img.jpg    1x,
+                  ./images/team-members/daniel-wilson/img@2x.jpg 2x
+                "
+                src="./images/team-members/daniel-wilson/img.jpg"
                 alt="Portrait photo"
                 width="264"
                 height="260"
@@ -338,43 +376,43 @@
       <section class="section-customers section-content">
         <div class="container">
           <h2 class="section-title">Customers</h2>
-          <ul class="customers-list list">
-            <li class="customers-item">
+          <ul class="customers-list list flex-grid">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-company-tagline-here"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-foster-peters"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="customers-item">
+            <li class="customers-item flex-grid-item">
               <a href="#" class="customers-icon-wrap">
                 <svg class="icon" width="104" height="56">
                   <use href="./images/icons.svg#icon-company-tagline"></use>
@@ -434,7 +472,7 @@
         <div class="footer-block-subscribe">
           <p class="footer-block-title subscribe-caption">Subscribe</p>
           <form class="subscribe-form" name="subscribe-form">
-            <label class="form-label" for="subscribe-email-field">
+            <label class="form-label subscribe-email-field" for="subscribe-email-field">
               <input
                 id="subscribe-email-field"
                 class="form-input email-field"
@@ -525,6 +563,76 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile menu tempalate -->
+    <div class="mobile-nav-container menu-container js-menu-container" id="mobile-menu">
+      <button class="btn-close btn menu-toggle js-close-menu" type="button" data-modal-close>
+        <svg class="icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-btn"></use>
+        </svg>
+      </button>
+
+      <!-- Navigation menu -->
+      <ul class="list mobile-nav-list">
+        <li class="mobile-nav-item">
+          <a href="./index.html" class="current link mobile-nav-link current">Studio</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a href="./portfolio.html" class="link mobile-nav-link">Portfolio</a>
+        </li>
+        <li class="mobile-nav-item"><a href="" class="link mobile-nav-link">Contacts</a></li>
+      </ul>
+      <!-- Contacts -->
+      <ul class="list mobile-nav-address-list">
+        <li class="mobile-nav-address-item mobile-nav-address-link-phone">
+          <a href="tel:+110001111111" class="link mobile-nav-address-link">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile-nav-address-item">
+          <a href="mailto:info@devstudio.com" class="link mobile-nav-address-link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <!-- Social icons -->
+      <ul class="mobile-nav-social-list list">
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="#" class="social-link">
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Mobile menu scripts-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
     <!-- JS script for modal window  -->
     <script src="./js/modal.js"></script>
   </body>
