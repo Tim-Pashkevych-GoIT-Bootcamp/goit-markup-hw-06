@@ -317,27 +317,32 @@ input {
 .address-list {
   gap: 40px;
 }
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .address-list {
     flex-direction: column;
     gap: 12px;
   }
 }
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .address-item {
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.04em;
   }
 }
 .address-link {
   color: var(--primary-text-color);
+  font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   padding: 24px 0 24px 0;
 }
-@media only screen and (max-width: 1158px) {
+@media only screen and (max-width: 1157px) {
   .address-link {
     padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -610,6 +615,11 @@ input {
   background-color: var(--modal-bg-color);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+@media only screen and (max-width: 427px) {
+  .backdrop .modal {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 768px) {
   .backdrop .modal {
@@ -910,6 +920,7 @@ input {
   --flex-grid-items: 1;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 768px) {
   .team-list {
@@ -925,17 +936,9 @@ input {
   }
 }
 .section-team .team-item {
+  max-width: 264px;
   text-align: center;
   background-color: var(--primary-bg-color);
-
-  max-width: 264px;
-  margin: 0 auto;
-
-  display: inline-flex;
-  padding-bottom: 0px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
