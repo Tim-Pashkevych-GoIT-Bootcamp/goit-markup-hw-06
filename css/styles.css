@@ -1215,16 +1215,51 @@ input {
  #PORTFOLIO PAGE
 ===================== */
 .section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .section-portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 .portfolio-filters-list {
-  display: flex;
+  --flex-grid-gap-col: 24px;
+  --flex-grid-gap-row: 24px;
   align-items: flex-start;
-  gap: 24px;
 
-  justify-content: center;
-  margin-bottom: 72px;
+  justify-content: left;
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-filters-list {
+    --flex-grid-gap-col: 24px;
+    --flex-grid-gap-row: 24px;
+    align-items: flex-start;
+
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-filters-list {
+    --flex-grid-gap-col: 24px;
+    --flex-grid-gap-row: 24px;
+    align-items: flex-start;
+
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+}
+.portfolio-filters-item {
+  width: auto;
 }
 .btn-portfolio-filters-item {
   display: flex;
@@ -1263,20 +1298,31 @@ input {
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .portfolio-data-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  --flex-grid-items: 1;
+  --flex-grid-gap-col: 24px;
+  --flex-grid-gap-row: 48px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-data-list {
+    --flex-grid-items: 2;
+    --flex-grid-gap-col: 24px;
+    --flex-grid-gap-row: 72px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .portfolio-data-list {
+    --flex-grid-items: 3;
+    --flex-grid-gap-col: 24px;
+    --flex-grid-gap-row: 48px;
+  }
 }
 .portfolio-data-item {
-  flex-basis: calc((100% - 48px) / 3);
-  display: inline-flex;
+  /* flex-basis: calc((100% - 48px) / 3); */
+  /* display: inline-flex; */
   /* margin-bottom: 24px; */
 }
 .portfolio-project-link {
   display: block;
-  width: 360px;
-  height: 420px;
   padding-bottom: 0px;
   text-decoration: none;
 
@@ -1294,6 +1340,15 @@ input {
 .portfolio-project-img-wrap {
   position: relative;
   overflow: hidden;
+}
+.portfolio-project-img {
+  width: 100%;
+  height: 280px;
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-project-img {
+    height: 300px;
+  }
 }
 .portfolio-project-img-overlay {
   position: absolute;
